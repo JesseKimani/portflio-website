@@ -1,0 +1,375 @@
+<!-- Scroll to top button -->
+<div class="scroll-up-btn" [class.show]="showScrollUp" (click)="scrollToTop()" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" [class.sticky]="isSticky" role="navigation" aria-label="Main navigation">
+  <div class="max-width">
+    <div class="logo">
+      <a href="#" aria-label="Jesse Kimani Portfolio">JK<span class="logo-dot">.</span></a>
+    </div>
+    <ul class="menu" [class.active]="isMenuOpen" role="menubar">
+      <li role="none"><a routerLink="/" fragment="home" (click)="closeMenu()" role="menuitem">Home</a></li>
+      <li role="none"><a routerLink="/" fragment="about" (click)="closeMenu()" role="menuitem">About</a></li>
+      <!-- <li role="none"><a routerLink="/" fragment="experience" (click)="closeMenu()" role="menuitem">Experience</a></li> -->
+      <li role="none"><a routerLink="/" fragment="projects" (click)="closeMenu()" role="menuitem">Projects</a></li>
+      <li role="none"><a routerLink="/" fragment="skills" (click)="closeMenu()" role="menuitem">Skills</a></li>
+      <li role="none"><a routerLink="/" fragment="blogs" (click)="closeMenu()" role="menuitem">Blog</a></li>
+      <li role="none"><a routerLink="/" fragment="contact" (click)="closeMenu()" role="menuitem">Contact</a></li>
+    </ul>
+    <button class="menu-btn" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen" aria-label="Toggle navigation menu">
+      <span class="burger" [class.open]="isMenuOpen">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="home" id="home" aria-labelledby="hero-heading">
+  <div class="home-bg-grid"></div>
+  <div class="home-orb home-orb--1"></div>
+  <div class="home-orb home-orb--2"></div>
+  <div class="max-width">
+    <div class="home-content">
+      <div class="hero-badge reveal-fade">
+        <span class="badge-dot"></span>Available for work
+      </div>
+      <h1 id="hero-heading" class="reveal-up" style="--delay:0.1s">
+        <span class="greeting">Hello, I'm</span>
+        <span class="hero-name">Jesse<br>Kimani</span>
+      </h1>
+      <p class="hero-role reveal-up" style="--delay:0.2s">
+        <span class="typing-cursor">{{ currentTyping }}</span>
+      </p>
+      <p class="hero-desc reveal-up" style="--delay:0.3s">
+        Fullstack developer crafting performant, elegant software solutions - from scalable backends to intuitive frontends.
+      </p>
+      <div class="hero-actions reveal-up" style="--delay:0.4s">
+        <a routerLink="/" fragment="projects" class="btn btn--primary">View My Work</a>
+        <a routerLink="/" fragment="contact" class="btn btn--outline">Hire Me</a>
+      </div>
+      <div class="hero-stats reveal-up" style="--delay:0.5s">
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Clients</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-wrapper reveal-fade" style="--delay:0.3s">
+      <div class="hero-img-ring"></div>
+      <div class="hero-img-ring hero-img-ring--2"></div>
+      <img src="/images/jesse.jpg" alt="Jesse Kimani — Fullstack Developer" class="hero-img">
+      <div class="hero-tag hero-tag--tl">
+        <i class="fas fa-code"></i> Java / Spring
+      </div>
+      <div class="hero-tag hero-tag--br">
+        <i class="fas fa-mobile-alt"></i> Angular / TypeScript
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section class="about" id="about" aria-labelledby="about-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">About Me</div>
+    <h2 id="about-heading" class="section-title reveal-up">The person behind the code</h2>
+    <div class="about-content">
+      <div class="about-image reveal-fade" style="--delay:0.1s">
+        <img src="/images/kimani.jpg" alt="Jesse Kimani">
+                <!-- <img src="/images/jesse.jpg" alt="Jesse Kimani"> -->
+
+        <div class="about-img-deco"></div>
+      </div>
+      <div class="about-text">
+        <p class="about-intro reveal-up" style="--delay:0.1s">
+          I'm a <strong>Fullstack Software Developer</strong> based in Nairobi, Kenya with over five years of experience building real-world products that scale.
+        </p>
+        <p class="reveal-up" style="--delay:0.2s">
+          My work spans enterprise-grade backend systems with Java & Spring Boot, dynamic web interfaces with Angular, and cross-platform mobile apps with Angular Ionic and Flutter. I care deeply about clean architecture, user experience, and shipping software that actually solves problems.
+        </p>
+        <p class="reveal-up" style="--delay:0.3s">
+          When I'm not coding, you'll find me writing technical articles, mentoring junior developers, or exploring open-source projects.
+        </p>
+        <div class="about-highlights reveal-up" style="--delay:0.4s">
+          <div class="highlight-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Nairobi, Kenya</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-briefcase"></i>
+            <span>Open to remote & on-site</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>B.Sc. Computer Science</span>
+          </div>
+        </div>
+        <div class="reveal-up" style="--delay:0.5s">
+          <a href="" class="btn btn--primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
+
+<!-- <section class="experience" id="experience" aria-labelledby="exp-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">Career Path</div>
+    <h2 id="exp-heading" class="section-title reveal-up">Work Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal-left" *ngFor="let job of experience; let i = index" [style.--delay]="(i * 0.1) + 's'">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">{{ job.role }}</h3>
+              <span class="timeline-company">{{ job.company }}</span>
+            </div>
+            <span class="timeline-period">{{ job.period }}</span>
+          </div>
+          <p class="timeline-desc">{{ job.description }}</p>
+          <div class="timeline-tags">
+            <span class="tech-tag" *ngFor="let tech of job.tech">{{ tech }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<section class="projects" id="projects" aria-labelledby="projects-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">Portfolio</div>
+    <h2 id="projects-heading" class="section-title reveal-up">Featured Projects</h2>
+    <p class="section-sub reveal-up" style="--delay:0.1s">A selection of systems I've designed, architected, and shipped.</p>
+    <div class="projects-grid">
+      <article class="project-card reveal-up" *ngFor="let project of projects; let i = index" [style.--delay]="(i * 0.15) + 's'">
+        <div class="project-img-wrapper">
+          <img [src]="project.image" [alt]="project.title" class="project-img" loading="lazy">
+          <div class="project-overlay">
+            <a [href]="project.liveUrl" target="_blank" rel="noopener" class="project-link" aria-label="Live demo">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a [href]="project.githubUrl" target="_blank" rel="noopener" class="project-link project-link--outline" aria-label="GitHub repository">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+          <span class="project-badge">{{ project.category }}</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-desc">{{ project.description }}</p>
+          <div class="project-tags">
+            <span class="tech-tag" *ngFor="let tech of project.tech">{{ tech }}</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+<section class="skills" id="skills" aria-labelledby="skills-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">Expertise</div>
+    <h2 id="skills-heading" class="section-title reveal-up">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal-up" *ngFor="let cat of skillCategories; let i = index" [style.--delay]="(i * 0.1) + 's'">
+        <div class="skill-cat-icon">
+          <i [class]="cat.icon"></i>
+        </div>
+        <h3 class="skill-cat-name">{{ cat.name }}</h3>
+        <div class="skill-tags">
+          <span class="skill-tag" *ngFor="let skill of cat.skills">{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+<section class="services" id="services" aria-labelledby="services-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">What I Offer</div>
+    <h2 id="services-heading" class="section-title reveal-up">Services</h2>
+    <div class="services-grid">
+      <div class="service-card reveal-up" *ngFor="let svc of services; let i = index" [style.--delay]="(i * 0.1) + 's'">
+        <div class="service-icon-wrap">
+          <i [class]="svc.icon"></i>
+        </div>
+        <h3 class="service-name">{{ svc.title }}</h3>
+        <p class="service-desc">{{ svc.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ BLOGS ═══════════════════════════════ -->
+<section class="blogs" id="blogs" aria-labelledby="blogs-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">Writing</div>
+    <h2 id="blogs-heading" class="section-title reveal-up">Latest Articles</h2>
+    <p class="section-sub reveal-up" style="--delay:0.1s">Thoughts on software engineering, architecture, and developer productivity.</p>
+    <div class="blogs-grid">
+      <article class="blog-card reveal-up" *ngFor="let blog of blogs; let i = index" [style.--delay]="(i * 0.12) + 's'">
+        <div class="blog-img-wrap">
+          <img [src]="blog.image" [alt]="blog.title" class="blog-img" loading="lazy">
+          <span class="blog-category-badge">{{ blog.category }}</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar-alt"></i> {{ blog.date }}</span>
+            <span><i class="far fa-clock"></i> {{ blog.readTime }}</span>
+          </div>
+          <h3 class="blog-title">{{ blog.title }}</h3>
+          <p class="blog-excerpt">{{ blog.excerpt }}</p>
+          <a [href]="blog.url" target="_blank" rel="noopener" class="blog-read-more">
+            Read Article <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="blogs-cta reveal-up">
+      <a href="https://medium.com/@jessekimani" target="_blank" rel="noopener" class="btn btn--outline">
+        <i class="fab fa-medium"></i> View All Articles
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+<section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">Social Proof</div>
+    <h2 id="testimonials-heading" class="section-title reveal-up">What Clients Say</h2>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial-card reveal-up" *ngFor="let t of testimonials; let i = index" [style.--delay]="(i * 0.12) + 's'">
+        <div class="testimonial-stars">
+          <i class="fas fa-star" *ngFor="let s of [1,2,3,4,5]"></i>
+        </div>
+        <p class="testimonial-text">{{ t.text }}</p>
+        <footer class="testimonial-author">
+          <img [src]="t.avatar" [alt]="t.name" class="testimonial-avatar">
+          <div>
+            <cite class="testimonial-name">{{ t.name }}</cite>
+            <span class="testimonial-role">{{ t.role }}</span>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="max-width">
+    <div class="section-label reveal-fade">Get In Touch</div>
+    <h2 id="contact-heading" class="section-title reveal-up">Let's Work Together</h2>
+    <div class="contact-content">
+      <div class="contact-info reveal-left" style="--delay:0.1s">
+        <p class="contact-intro">Have a project in mind or just want to say hello? I'm always open to discussing new opportunities and ideas.</p>
+        <div class="contact-details">
+          <div class="contact-row">
+            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Nairobi, Kenya</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:jessekimani21@gmail.com" class="contact-value contact-link">jessekimani21&#64;gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon-wrap"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <a href="tel:+254743784792" class="contact-value contact-link">+254 743 784 792</a>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/jessekimani" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/jessekimani" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/jessekimani" target="_blank" rel="noopener" aria-label="Twitter/X" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="https://medium.com/@jessekimani" target="_blank" rel="noopener" aria-label="Medium" class="social-btn"><i class="fab fa-medium-m"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-right" style="--delay:0.2s" (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate>
+        <div class="form-row">
+          <div class="form-group" [class.error]="nameField.invalid && nameField.touched">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" [(ngModel)]="formData.name" name="name" placeholder="John Doe"
+                   required minlength="2" #nameField="ngModel" autocomplete="name">
+            <span class="form-error" *ngIf="nameField.invalid && nameField.touched">Please enter your name.</span>
+          </div>
+          <div class="form-group" [class.error]="emailField.invalid && emailField.touched">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" [(ngModel)]="formData.email" name="email" placeholder="john@example.com"
+                   required email #emailField="ngModel" autocomplete="email">
+            <span class="form-error" *ngIf="emailField.invalid && emailField.touched">Please enter a valid email.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" [(ngModel)]="formData.subject" name="subject"
+                 placeholder="Project inquiry, collaboration..." required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" [(ngModel)]="formData.message" name="message"
+                    placeholder="Tell me about your project, timeline, and budget..." rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" [class.loading]="isSubmitting" [disabled]="isSubmitting">
+          <span *ngIf="!isSubmitting"><i class="fas fa-paper-plane"></i> Send Message</span>
+          <span *ngIf="isSubmitting"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+        </button>
+        <div class="form-status form-status--success" *ngIf="submitStatus === 'success'">
+          <i class="fas fa-check-circle"></i> Message sent! I'll get back to you within 24 hours.
+        </div>
+        <div class="form-status form-status--error" *ngIf="submitStatus === 'error'">
+          <i class="fas fa-exclamation-circle"></i> Something went wrong. Please email me directly.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer class="footer">
+  <div class="max-width">
+    <div class="footer-inner">
+      <div class="footer-logo">JK<span class="logo-dot">.</span></div>
+      <p class="footer-copy">
+        Designed & built by <strong>Jesse Kimani</strong> &copy; {{ currentYear }}. All rights reserved.
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/jessekimani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/jessekimani" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/jessekimani" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
