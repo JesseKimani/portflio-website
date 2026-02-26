@@ -126,8 +126,8 @@ export class Home implements AfterViewInit, OnDestroy {
       category: 'Enterprise Web App',
       description:
         'A comprehensive platform for landlords, property managers, and tenants. Features include lease management, automated rent collection via M-Pesa, maintenance request workflows, financial reporting, and a tenant self-service portal.',
-      image: '/images/projects/property.jpg',
-      tech: ['Spring Boot', 'Angular', 'PostgreSQL', 'M-Pesa API', 'Docker'],
+      image: '/images/pms.png',
+      tech: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL', 'M-Pesa API', 'Docker'],
       liveUrl: '',
       githubUrl: '',
     },
@@ -136,8 +136,8 @@ export class Home implements AfterViewInit, OnDestroy {
       category: 'Full-Stack Platform',
       description:
         'End-to-end vehicle rental platform with real-time fleet availability and online booking. Vehicle management, driver assignment, damage reporting, and analytics dashboards.',
-      image: '/images/projects/carrental.jpg',
-      tech: ['Laravel', 'MySQL'],
+      image: '/images/car-rental.png',
+      tech: ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'JQuery'],
       liveUrl: '',
       githubUrl: '',
     },
@@ -146,7 +146,7 @@ export class Home implements AfterViewInit, OnDestroy {
       category: 'Commerce Solution',
       description:
         'A scalable marketplace with product catalogue management, cart & wishlist, and order tracking',
-      image: '/images/projects/ecommerce.jpg',
+      image: '/images/e-commerce.png',
       tech: ['JavaScript', 'HTML', 'CSS'],
       liveUrl: '',
       githubUrl: '',
