@@ -147,7 +147,7 @@ export class Home implements AfterViewInit, OnDestroy {
       description:
         'A scalable marketplace with product catalogue management, cart & wishlist, and order tracking',
       image: '/images/projects/ecommerce.jpg',
-      tech: ['JavaScript'],
+      tech: ['JavaScript', 'HTML', 'CSS'],
       liveUrl: '',
       githubUrl: '',
     },
