@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PorfolioWebsite": {
+    "PortfolioWebsite": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "PorfolioWebsite:build:production"
+              "buildTarget": "PortfolioWebsite:build:production"
             },
             "development": {
-              "buildTarget": "PorfolioWebsite:build:development"
+              "buildTarget": "PortfolioWebsite:build:development"
             }
           },
           "defaultConfiguration": "development"
