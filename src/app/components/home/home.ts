@@ -128,8 +128,8 @@ export class Home implements AfterViewInit, OnDestroy {
         'A comprehensive platform for landlords, property managers, and tenants. Features include lease management, automated rent collection via M-Pesa, maintenance request workflows, financial reporting, and a tenant self-service portal.',
       image: '/images/pms.png',
       tech: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL', 'M-Pesa API', 'Docker'],
-      liveUrl: '',
-      githubUrl: '',
+      liveUrl: 'https://github.com/jel-systems/property-management-system-ui',
+      githubUrl: 'https://github.com/jel-systems/property-management-system',
     },
     {
       title: 'Car Rental System',
@@ -138,8 +138,8 @@ export class Home implements AfterViewInit, OnDestroy {
         'End-to-end vehicle rental platform with real-time fleet availability and online booking. Vehicle management, driver assignment, damage reporting, and analytics dashboards.',
       image: '/images/car-rental.png',
       tech: ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'JQuery'],
-      liveUrl: '',
-      githubUrl: '',
+      liveUrl: 'https://github.com/JesseKimani/Car-Rental-System',
+      githubUrl: 'https://github.com/JesseKimani/Car-Rental-System',
     },
     {
       title: 'E-Commerce Website',
@@ -148,8 +148,8 @@ export class Home implements AfterViewInit, OnDestroy {
         'A scalable marketplace with product catalogue management, cart & wishlist, and order tracking',
       image: '/images/e-commerce.png',
       tech: ['JavaScript', 'HTML', 'CSS'],
-      liveUrl: '',
-      githubUrl: '',
+      liveUrl: 'https://github.com/JesseKimani/E-Commerce-Website',
+      githubUrl: 'https://github.com/JesseKimani/E-Commerce-Website',
     },
   ];
 
@@ -234,17 +234,17 @@ export class Home implements AfterViewInit, OnDestroy {
       excerpt:
         'A deep dive into structuring Spring Boot applications using Clean Architecture principles — separating domain logic from infrastructure concerns for long-term maintainability.',
       image: '/images/blogs/spring-boot.jpg',
-      url: '',
+      url: 'https://medium.com/@jessekimani21',
     },
     {
-      title: 'Flutter State Management in 2025: Riverpod vs BLoC vs Provider',
-      category: 'Mobile',
-      date: 'Dec 5, 2025',
-      readTime: '6 min read',
+      title: 'Monolithic vs Microservices in Building Enterprise Applications',
+      category: 'Backend',
+      date: 'Feb 20, 2026',
+      readTime: '4 min read',
       excerpt:
-        'An honest, practical comparison of the three most popular Flutter state management solutions — with real project examples, trade-offs, and a recommendation for different scenarios.',
-      image: '/images/blogs/flutter.jpg',
-      url: '',
+        'An honest, practical comparison of the two most popular software development architectures, with real project examples, trade-offs, and a recommendation for different scenarios.',
+      image: '/images/monolith-microservices.png',
+      url: 'https://medium.com/@jessekimani21/monolithic-vs-microservices-what-i-learned-building-enterprise-applications-9acb59bd7830',
     },
     {
       title: 'Integrating M-Pesa Daraja API with Laravel: A Complete Guide',
@@ -254,7 +254,7 @@ export class Home implements AfterViewInit, OnDestroy {
       excerpt:
         'Step-by-step walkthrough of integrating Safaricom\'s M-Pesa Daraja API into a Laravel application — covering STK Push, C2B, B2C callbacks, and error handling.',
       image: '/images/blogs/mpesa.jpg',
-      url: '',
+      url: 'https://medium.com/@jessekimani21',
     },
   ];
 
