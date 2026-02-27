@@ -162,7 +162,7 @@ export class Home implements AfterViewInit, OnDestroy {
     {
       name: 'Frontend',
       icon: 'fas fa-desktop',
-      skills: ['Angular', 'JavaScript', 'TypeScript', 'Vue.js', 'HTML', 'CSS', ],
+      skills: ['Angular', 'JavaScript', 'TypeScript', 'JQuery', 'Vue.js', 'HTML', 'CSS', ],
     },
     {
       name: 'Mobile',
