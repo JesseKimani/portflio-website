@@ -128,8 +128,8 @@ export class Home implements AfterViewInit, OnDestroy {
         'A comprehensive platform for landlords, property managers, and tenants. Features include lease management, automated rent collection via M-Pesa, maintenance request workflows, financial reporting, and a tenant self-service portal.',
       image: '/images/pms.png',
       tech: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL', 'M-Pesa API', 'Docker'],
-      liveUrl: 'https://github.com/jel-systems/property-management-system-ui',
-      githubUrl: 'https://github.com/jel-systems/property-management-system',
+      liveUrl: 'https://github.com/JesseKimani/property-management-system',
+      githubUrl: 'https://github.com/JesseKimani/property-management-system',
     },
     {
       title: 'Car Rental System',
@@ -137,7 +137,7 @@ export class Home implements AfterViewInit, OnDestroy {
       description:
         'End-to-end vehicle rental platform with real-time fleet availability and online booking. Vehicle management, driver assignment, damage reporting, and analytics dashboards.',
       image: '/images/car-rental.png',
-      tech: ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'JQuery'],
+      tech: ['PHP', 'Laravel', 'Vue', 'MySQL', 'JavaScript', 'JQuery'],
       liveUrl: 'https://github.com/JesseKimani/Car-Rental-System',
       githubUrl: 'https://github.com/JesseKimani/Car-Rental-System',
     },

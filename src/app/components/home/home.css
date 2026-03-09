@@ -252,7 +252,7 @@ section { padding: var(--section-pad); }
 }
 
 /* Decorative backgrounds */
-.home-bg-grid {
+/* .home-bg-grid {
   position: absolute;
   inset: 0;
   background-image:
@@ -261,7 +261,7 @@ section { padding: var(--section-pad); }
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
   pointer-events: none;
-}
+} */
 
 .home-orb {
   position: absolute;
